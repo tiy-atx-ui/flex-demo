@@ -1,0 +1,99 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+header {
+  background: blue;
+  color: white;
+  overflow: hidden;
+  padding: 10px; }
+  header img.logo {
+    float: left; }
+  header nav li {
+    list-style: none;
+    display: inline-block; }
+  header nav a {
+    color: white; }
+  header nav.nav-left {
+    float: left; }
+  header nav.nav-right {
+    float: right; }
+  header input {
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    display: block;
+    margin: 0 auto; }
+
+section.hero {
+  background: teal;
+  color: white;
+  padding: 60px 0px;
+  text-align: center; }
+  section.hero h1 {
+    font-size: 50px;
+    padding: 20px; }
+
+main {
+  padding: 60px 0px;
+  overflow: hidden;
+  background: #999; }
+  main aside.sidebar {
+    width: 23%;
+    margin-right: 2%;
+    background: teal;
+    color: white;
+    float: left; }
+  main .book-container {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+.book {
+  overflow: hidden;
+  margin-bottom: 2%; }
+  .book img {
+    display: inline-block;
+    float: left;
+    width: 40%;
+    margin-right: 4%; }
+  .book .book-info {
+    float: left;
+    width: 56%; }
+
+@media (max-width: 600px) {
+  aside.sidebar {
+    display: none; }
+
+  .book-container {
+    width: 100%; }
+
+  .book {
+    width: 100%;
+    padding: 3%;
+    border-bottom: 1px solid #999; }
+    .book h3 {
+      font-size: 2em; } }
+@media (min-width: 601px) and (max-width: 900px) {
+  .book-container {
+    width: 75%; }
+
+  .book {
+    width: 50%; }
+    .book h3 {
+      font-size: 1.6em; } }
+@media (min-width: 901px) {
+  aside.sidebar-mobile {
+    display: none; }
+
+  .book-container {
+    width: 75%; }
+
+  .book {
+    width: 31%; } }
+
+/*# sourceMappingURL=main.css.map */

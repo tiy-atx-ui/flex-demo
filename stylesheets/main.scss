@@ -1,0 +1,123 @@
+@import 'partials/layout';
+@import 'partials/variables';
+
+header {
+  background: $color-primary;
+  color: $text-light;
+  overflow: hidden;
+  padding: 10px;
+  img.logo {
+    float: left;
+  }
+  nav {
+
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+    a {
+      color: white;
+    }
+  }
+  nav.nav-left {
+    float: left;
+  }
+  nav.nav-right {
+    float: right;
+  }
+  input {
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+section.hero {
+  background: $color-secondary;
+  color: $text-light;
+  padding: 60px 0px;
+  text-align: center;
+  h1 {
+    font-size: 50px;
+    padding: 20px;
+  }
+}
+
+main {
+  padding: 60px 0px;
+  overflow: hidden;
+  background: #999;
+  aside.sidebar {
+    width: 23%;
+    margin-right: 2%;
+    background: $color-secondary;
+    color: $text-light;
+    float: left;
+  }
+  .book-container {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.book {
+  overflow: hidden;
+  margin-bottom: 2%;
+  img {
+    display: inline-block;
+    float: left;
+    width: 40%;
+    margin-right: 4%;
+  }
+  .book-info {
+    float: left;
+    width: 56%;
+  }
+}
+
+@media (max-width: 600px) {
+  aside.sidebar {
+    display: none;
+  }
+  .book-container {
+    width: 100%;
+  }
+  .book {
+    width: 100%;
+    padding: 3%;
+    border-bottom: 1px solid #999;
+    h3 {
+      font-size: 2em;
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width:900px) {
+  .book-container {
+    width: 75%;
+  }
+  .book {
+    width: 50%;
+    h3 {
+      font-size: 1.6em;
+    }
+  }
+}
+
+@media (min-width: 901px) {
+  aside.sidebar-mobile {
+    display: none;
+  }
+  .book-container {
+    width: 75%;
+  }
+  .book {
+    width: 31%;
+  }
+}
